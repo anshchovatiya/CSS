@@ -22,14 +22,14 @@
       rel="stylesheet"
     />
   </head>
-  <body >
+  <body>
     <!-- main container started here -->
 
     <div class="main_container dark:bg-slate-900 max-[200px]:overflow-hidden">
       <!-- header section start here -->
-      <header class="backdrop-blur-sm sticky top-0 z-50">
+      <header class="backdrop-blur-[6px] sticky top-0 z-50">
         <div
-          class="max-container header flex justify-between items-center py-4 px-8 h-24 bg-transparent "
+          class="max-container header flex justify-between items-center py-4 px-8 h-24 bg-transparent"
         >
           <!-- this is logo section -->
           <a href="#">
@@ -70,7 +70,7 @@
       <main class="w-full">
         <!-- hero section started here -->
         <div
-          class="hero-section py-4 px-8 max-container flex lg:mt-24 max-lg:flex-col items-center max-lg:gap-8 mb-24  max-[350px]:break-all"
+          class="hero-section py-4 px-8 max-container flex lg:mt-24 max-lg:flex-col items-center max-lg:gap-8 mb-24 max-[350px]:break-all"
         >
           <!-- left side of hero section -->
           <div class="left-side flex-1 text-center flex flex-col items-center">
@@ -390,12 +390,14 @@
           </section>
         </div>
         <!-- review section ended here -->
-         
+
         <!-- email section started here  -->
         <div
           class="email-section max-container text-center lg:flex my-16 gap-8 items-center px-8 justify-between"
         >
-          <p class="text-[3rem] font-bold md:text-[2rem] dark:text-white mb-8 lg:mb-0 ">
+          <p
+            class="text-[3rem] font-bold md:text-[2rem] dark:text-white mb-8 lg:mb-0"
+          >
             Sign Up for <span>Updates</span> & Newsletter
           </p>
           <form
@@ -416,9 +418,94 @@
             />
           </form>
         </div>
-                <!-- email section ended here  -->
+        <!-- email section ended here  -->
       </main>
       <!-- main content section ended here -->
+
+      <!-- footer section started here -->
+      <!-- footer section ended here -->
+      <footer class="bg-black">
+        <div class="max-container py-12 px-8 grid place-items-center">
+          <div class="top lg:flex lg:items-center lg:gap-28 w-full">
+            <section
+              class="frist-section py-10 grid place-items-center text-center"
+            >
+              <img class="py-4" src="./assets/images/footer-logo.svg" alt="nike logo" />
+              <p class="text-white py-8 max-w-[350px] text-lg">
+                Get shoes ready for the new term at your nearest Nike store.
+                Find your perfect size in Store. Get rewards.
+              </p>
+              <div class="flex gap-6 my-5">
+                <div
+                  class="bg-white h-12 w-12 rounded-full grid place-items-center"
+                >
+                  <img
+                    class="w-8 h-8"
+                    src="./assets/icons/facebook.svg"
+                    alt="facebook icon"
+                  />
+                </div>
+                <div
+                  class="bg-white h-12 w-12 rounded-full grid place-items-center"
+                >
+                  <img
+                    class="w-8 h-8"
+                    src="./assets/icons/twitter.svg"
+                    alt="twitter icon"
+                  />
+                </div>
+                <div
+                  class="bg-white h-12 w-12 rounded-full grid place-items-center"
+                >
+                  <img
+                    class="w-8 h-8"
+                    src="./assets/icons/instagram.svg"
+                    alt="instagram icon"
+                  />
+                </div>
+              </div>
+            </section>
+            <section
+              class="second-section flex text-white justify-between text-center p-10 flex-col gap-16  flex-1 sm:flex-row"
+            >
+              <ul>
+                <li class="text-xl mb-6 font-bold">Products</li>
+                <li class="footer-list-items"><a href="#">Air Force 1</a></li>
+                <li class="footer-list-items"><a href="#">Air Max 1</a></li>
+                <li class="footer-list-items"><a href="#">Air Jordan 1</a></li>
+                <li class="footer-list-items"><a href="#">Air Force 2</a></li>
+                <li class="footer-list-items">
+                  <a href="#">Nike Waffle Racer</a>
+                </li>
+                <li class="footer-list-items"><a href="#">Nike Cortez</a></li>
+              </ul>
+              <ul>
+                <li class="text-xl mb-6 font-bold">Help</li>
+                <li class="footer-list-items"><a href="#">About Us</a></li>
+                <li class="footer-list-items"><a href="#">FAQs</a></li>
+                <li class="footer-list-items"><a href="#">How it works</a></li>
+                <li class="footer-list-items">
+                  <a href="#">Privacy policy</a>
+                </li>
+                <li class="footer-list-items">
+                  <a href="#">Payment policy</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="text-xl mb-6 font-bold">Get in touch</li>
+                <li class="footer-list-items">
+                  <a href="#">Customer@nike.com</a>
+                </li>
+                <li class="footer-list-items"><a href="#">+92554862334</a></li>
+              </ul>
+            </section>
+          </div>
+          <p class="text-white flex gap-3">
+            <img src="./assets/icons/copyright-sign.svg" alt="copyright sign" />
+            Copyright. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
     <!-- main container ended here -->
 

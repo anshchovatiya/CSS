@@ -131,6 +131,10 @@
     filter:drop-shadow(0px 5px 15px black);
   }
 
+  .footer-list-items{
+      @apply mb-3 font-semibold  text-base;
+  }
+
 }
 
 
