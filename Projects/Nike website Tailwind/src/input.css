@@ -12,6 +12,7 @@
   --orange-color:#FF6452;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +25,10 @@
   .max-container {
     max-width: 1440px;
     margin: 0 auto;
+    @apply max-[400px]:break-words;
   }
+
+
 
 }
 
@@ -54,7 +58,7 @@
 
   /* this is snippet for buttons */
   .button{
-    @apply medium-responsive-font z-20 font-semibold relative dark:text-white px-6 pt-[0.2rem] pb-[0.4rem] rounded-md bg-slate-900 text-white dark:bg-white dark:text-black overflow-hidden;
+    @apply medium-responsive-font z-20 font-semibold relative dark:text-white px-5 pt-1 pb-2  rounded-md bg-slate-900 text-white dark:bg-white dark:text-black overflow-hidden;
     
     &::before{
       content: "";
@@ -80,6 +84,35 @@
     
   }
 
+  /* this is snippet for buttons */
+  .button_transparent{
+    @apply medium-responsive-font z-20 font-semibold relative px-5 pt-1 pb-2   rounded-md text-black dark:bg-white dark:text-black overflow-hidden border-2 border-solid border-black;
+
+    &::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      background: rgb(255, 55, 0);
+      height: 0%;
+      transition: 0.8s;
+      bottom: 0;
+      left: 0;
+      border-radius: 50% 50% 0 0;
+      transition: height 0.6s linear;
+      background-clip: content-box;
+      z-index: -1;
+    }
+
+    &:hover::before{
+      height: 180%;
+    } 
+    &:hover{
+      transition: 0.7s;
+      color:white;
+    }
+    
+  }
+
 
   .medium-responsive-font{
     font-size: clamp(1.2rem,1vw,1.5rem);
@@ -91,7 +124,11 @@
 
 
   .Description{
-    @apply text-xs mb-5 text-slate-500 tracking-wider dark:text-white-400 md:text-base;
+    @apply text-base mb-5 text-slate-500 tracking-wider dark:text-white-400 md:text-xl;
+  }
+
+  .shadow_custom{
+    filter:drop-shadow(0px 5px 15px black);
   }
 
 }
