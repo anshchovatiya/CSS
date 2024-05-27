@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @layer first, second;
+
+        @layer second {
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            .container {
+                height: 100vh;
+                width: 100vw;
+                background-color: rgb(39, 37, 37);
+                display: grid;
+                padding: 0.8rem;
+                gap: 0.8rem;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+
+            .item {
+                border: solid 2px black;
+                border-radius: 10px;
+            }
+
+            .item8 {
+                grid-column: span 3;
+                background-color: rgb(172, 120, 72);
+            }
+
+            .item9 {
+                grid-column: span 5;
+                background-color: rgb(123, 197, 120);
+            }
+        }
+
+        @layer first {
+            .container :nth-child(even) {
+                background-color: rgb(93, 170, 170);
+            }
+
+            .container :nth-child(odd) {
+                background-color: rgb(74, 74, 172);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div>
+        <div class="item item7"></div>
+        <div class="item item8"></div>
+        <div class="item item9"></div>
+    </div>
+
+</body>
+
+</html>

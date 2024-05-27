@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    margin: 15px auto;
+    background-color: red;
+    border: 2px solid black;
+    border-style: dashed;
+    /* background-clip: border-box; */
+    /* background-clip: content-box; */
+    /* background-clip: padding-box; */
+    ul{
+        /* list-style-position: outside; */
+        list-style-position: inside;
+        list-style-type: circle;
+        height: 100%;
+        width: 100%;
+        list-style-image: url(./download\ \(2\).png);
+        }
+}

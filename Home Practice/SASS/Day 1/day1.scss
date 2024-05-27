@@ -1,0 +1,37 @@
+
+// you can store value inside variable and use it many time's as you want
+$cri:crimson;
+$text-color:white;
+$font-size: 55px;
+
+body{
+    background-color: $cri;
+}
+
+h1{
+    background-color: $text-color;
+    color: $cri;
+    font-size: $font-size ;
+}
+
+// this is concept of nesting it make code more readable and easy to understand
+header{
+    background-color: royalblue;
+    padding: 2rem;
+    h2{
+        font-family: cursive ;
+    }
+
+    p{
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+    }
+
+    nav{
+        a{
+            color: white;
+            margin-right: 30px;
+        }
+    }
+}

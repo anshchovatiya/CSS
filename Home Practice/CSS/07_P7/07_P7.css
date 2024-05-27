@@ -1,0 +1,11 @@
+.container>p>a {
+    color: orange;
+}
+
+p a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+}

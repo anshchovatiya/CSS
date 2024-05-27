@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #ccc;
+}
+
+article {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+}
+
+address {
+    position: absolute;
+    bottom: 8mm;
+    right: 20mm;
+}
+
+h1 {
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Your CSS below here */
+
+/* .box {
+    background-image: url("/17_P17/top-image.png"), url("/17_P17/bottom-image.png");
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    background-color: white;
+    border: solid 1mm black;
+
+}
+
+h1 {
+    background-image: url("/17_P17/logo.png");
+} */
+
+
+h1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    /* Adjust according to the logo size */
+    height: 80px;
+    /* Adjust according to the logo size */
+    background: url('logo.jpg') center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Alternative drop shadow */
+}

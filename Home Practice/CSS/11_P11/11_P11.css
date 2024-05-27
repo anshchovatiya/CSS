@@ -1,0 +1,26 @@
+.maincontainer {
+    border: solid 2px black;
+    display: flex;
+}
+
+.text {
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title {
+    font-weight: bolder;
+}
+
+
+@media (min-width:640px) {
+    .maincontainer {
+        flex-direction: row;
+    }
+}
+
+@media (max-width:639px) {
+    .maincontainer {
+        flex-direction: column;
+    }
+}

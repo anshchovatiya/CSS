@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+        .main_container{
+            width: 100%;
+            /* border: 3px solid black; */
+            display: grid;
+            place-items: center;
+        }
+
+        .box{
+            width: 50%;
+            display: flex;
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        img{
+            /* width: 400px; */
+            width: 100%;
+            position: absolute;
+        }
+
+
+        .box img:nth-child(1){
+            top:0;
+            left: 0;
+            clip-path: polygon(50% 0%, 0% 100%, 0 0);
+        }
+        
+        .box img:nth-child(1):hover{
+            scale: 1.2;
+        }
+
+        .box img:nth-child(2){
+            top:0;
+            left:0;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+        .box img:nth-child(3){
+            top:0;
+            right: 0;
+            clip-path: polygon(50% 0%, 100% 0, 100% 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+        <div class="box">
+            <img src="https://res.klook.com/image/upload/c_fill,w_750,h_500/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/tsah7c9evnal289z5fig.jpg" alt="">
+            <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/8359_img_worlds_of_adventure-big1613913137.jpg-1024x683.webp" alt="">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/04/55/9b.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

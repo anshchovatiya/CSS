@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.main_container{
+    overflow: auto;
+    min-height: 100svh;
+    width: 100%;
+    background-color:rgb(211, 201, 201);
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    flex-wrap: wrap;
+    .blog{
+        overflow: hidden;
+        flex-basis: 400px;
+        border: 1px solid rgb(192, 186, 186);
+        min-height: 40vh ;
+        max-width: 80%;
+        width: 23%;
+        background-color: white;
+        border-radius: 30px;
+        .upper_section{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: relative;
+            background-color: royalblue;
+            border-bottom-left-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                object-fit: cover;
+                width: 50%;
+                border-radius: 50%;
+                margin: 3rem;
+                border: 3px solid blue;
+                outline:solid 3px white;
+            }
+        }
+    
+        .lower_section{
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            border-top-right-radius: 30px;
+            p:nth-child(1){
+                font-size: clamp(1rem,1.7vw,2rem);
+                padding: 1rem 0rem;
+                font-weight: 450;
+                letter-spacing: 1px;
+            }
+            p:nth-child(2){
+                font-size: clamp(0.6rem,1vw,1.2rem);
+                margin: 0rem 1rem;
+                font-weight: 300;
+            }
+            button{
+                font-size: clamp(0.8rem,1.2vw,1.5rem);
+                margin: 1.7rem 0rem;
+                font-weight: 500;
+                background-color: royalblue;
+                padding: 0.6vw 2vw;
+                border-radius: 10px;
+                border: none;
+                color: white;
+
+            }
+            
+        }
+        transition: all 0.6s 0s linear;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    
+}
+
+.lower_main{
+    background-color: royalblue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.blog3{
+    border-radius: 10px;
+}
+
+// @media (max-width:900px){
+//     .main_container{
+//         flex-direction: column;
+//     }
+// }
+

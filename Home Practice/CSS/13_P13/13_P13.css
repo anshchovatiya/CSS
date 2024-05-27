@@ -1,0 +1,115 @@
+* {
+    height: 0px;
+    width: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: aqua;
+    height: 100svh;
+    width: 100svw;
+    border: solid 5px black;
+    position: relative;
+}
+
+
+.box {
+    height: 300px;
+    width: 500px;
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
+    border: solid 5px rgb(98, 16, 146);
+    border-radius: 50px;
+    position: relative;
+    /* animation-name: firstbox1;
+    animation-duration: 0.10s;
+    animation-iteration-count: infinite;
+   
+    animation-timing-function: ease-out;
+    /* animation-play-state: paused;  */
+    /* animation-direction: alternate-reverse;
+    animation-fill-mode: both; */
+    animation: 3s linear 0s infinite alternate both running firstbox1;
+}
+
+
+.box1 {
+    height: 300px;
+    width: 500px;
+    background-color: yellowgreen;
+    padding: 10px;
+    margin: 10px;
+    border: solid 5px rgb(98, 16, 146);
+    border-radius: 50px;
+    position: relative;
+    animation: 3s linear 0s infinite alternate-reverse both running firstbox2;
+
+}
+
+@keyframes firstbox1 {
+    from {
+        top: 0px;
+        left: 0;
+    }
+
+    to {
+        top: 0;
+        left: 100%;
+    }
+}
+
+@keyframes firstbox2 {
+    from {
+        top: 74%;
+        left: 0px;
+    }
+
+    to {
+        top: 74%;
+        left: 2800px;
+    }
+}
+
+
+.circle {
+    background-color: rgb(38, 36, 158);
+    height: 300px;
+    width: 300px;
+    border: solid 5px rgb(98, 16, 146);
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    top: 33%;
+    left: 45%;
+
+    box-shadow: 10px 10px 6px 4px rgb(187, 13, 13);
+
+    animation: 5s linear 0s infinite alternate-reverse none running roundmovement;
+}
+
+
+@keyframes roundmovement {
+    0% {
+        top: 2%;
+        left: 5%;
+    }
+
+    30% {
+        top: 5%;
+        left: 80%;
+    }
+
+    60% {
+        top: 74%;
+        left: 3%;
+    }
+
+    90% {
+        top: 74%;
+        left: 80%;
+    }
+
+
+}

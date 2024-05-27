@@ -1,0 +1,22 @@
+
+h1{
+    background-color: yellow;
+    text-align: center;
+}
+
+/* this css is using id */
+#b501{
+    background-color: blue;
+}
+
+/*this css is using class*/
+.para3
+{
+    background-color: burlywood;
+}
+
+/*this css is using group*/
+p,h1
+{
+    font-size: small;
+}

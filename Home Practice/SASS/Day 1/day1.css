@@ -1,0 +1,26 @@
+body {
+  background-color: crimson;
+}
+
+h1 {
+  background-color: white;
+  color: crimson;
+  font-size: 55px;
+}
+
+header {
+  background-color: royalblue;
+  padding: 2rem;
+}
+header h2 {
+  font-family: cursive;
+}
+header p {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+header nav a {
+  color: white;
+  margin-right: 30px;
+}/*# sourceMappingURL=day1.css.map */

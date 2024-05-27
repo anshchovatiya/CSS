@@ -1,0 +1,10 @@
+*::selection{
+    background-color: pink;
+    color: yellow;
+}
+
+
+p{
+    color: blue;
+}
+

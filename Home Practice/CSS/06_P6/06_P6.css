@@ -1,0 +1,31 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.menubar {
+
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+.search {
+    float: left;
+}
+
+
+.menuicon {
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+.youtubelogo {
+    width: 80px;
+    height: 35px;
+}

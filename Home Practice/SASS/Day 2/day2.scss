@@ -1,0 +1,73 @@
+
+
+
+// this is map it is just like a variable but unlike variable you can assign multiple value to it
+$text-size:("moblie":10px, "tablet":20px,"laptop":30px);
+
+$box-height:50vh;
+
+// mixin is just like function you can write code once and use it many times as you want
+// $align:center is default value if function do not get value center is by default value
+@mixin flex($justify,$align:center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: row;
+}
+
+
+.box{
+    height: $box-height;
+    @include flex(space-between,end);
+    padding: 20px;
+    background-color: yellow;
+    color:red;
+    address p:nth-child(1){
+        font-size: map-get($map: $text-size, $key: "moblie");
+    }
+    address p:nth-child(2){
+        // map-get function is used to call specific value from map values
+        font-size: map-get($map: $text-size, $key: "laptop" );
+    }
+
+    a{
+        font-size: 1px * 50;
+        color: black;
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+// you can use operator in sass
+//  + - / *
+// example: font-size: 20px * 2;
+// example: font-size: 10px + 2;
+// example: font-size: 20px - 1;
+// example: font-size: 30px / 5;
+
+.button{
+    background-color: green;
+    color: red;
+    font-size: map-get($map: $text-size, $key: "laptop");
+}
+
+.box2{
+    // this will call the all the property and value of .button selector
+    @extend .button;
+    padding: 2rem;
+    &:hover{
+        background-color: royalblue;
+    }
+}
+
+
+.box3{
+    a{
+        color: red;
+        &:hover{
+            color: royalblue;
+        }
+    }
+
+}

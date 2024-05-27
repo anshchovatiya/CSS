@@ -1,0 +1,27 @@
+.container {
+    background-color: wheat;
+    height: 1000px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: aqua;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 7px 1px blue;
+}
+
+.image1 {
+    width: 150px;
+    height: 50px;
+}
+
+.title {
+    text-shadow: 8px 8px 5px rgb(35, 36, 116), 8px -8px 5px red;
+}

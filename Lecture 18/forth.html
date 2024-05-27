@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: #f1f1f1;
+        border: none;
+        cursor: pointer;
+        color: black;
+        box-shadow: 0px 0px 5px 0px black;
+        position: relative;
+      }
+      .btn:nth-child(1) {
+        background-color: crimson;
+      }
+      .btn:nth-child(2) {
+        background-color: green;
+      }
+      .btn:nth-child(3) {
+        background-color: yellow;
+      }
+      .btn:nth-child(4) {
+        background-color: skyblue;
+      }
+
+      .btn::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.751);
+        top: -3rem;
+        left: 0;
+        color: white;
+      }
+
+      .btn::before {
+        content: "";
+        position: absolute;
+        top: -16px;
+        left: 50%;
+        margin-left: -10px;
+        border-width: 10px;
+        border-style: solid;
+      }
+
+      .btn:nth-child(1)::after {
+        content: "left side demo";
+        left: -110%;
+        top: 0;
+        display: none;
+      }
+
+      .btn:nth-child(1)::before {
+        border-color: transparent transparent transparent rgba(0, 0, 0, 0.751);
+        top: 25%;
+        left: 0;
+        display: none;
+      }
+
+      .btn:nth-child(1):hover::after,
+      .btn:nth-child(1):hover::before {
+        display: block;
+        display: grid;
+        place-items: center;
+      }
+
+      .btn:nth-child(2)::after {
+        content: "bottom side demo";
+        top: 140%;
+        display: none;
+      }
+      .btn:nth-child(2)::before {
+        border-color: transparent transparent rgba(0, 0, 0, 0.751) transparent;
+        top: 84%;
+        left: 50%;
+        display: none;
+      }
+
+      .btn:nth-child(2):hover::after,
+      .btn:nth-child(2):hover::before {
+        display: block;
+        display: grid;
+        place-items: center;
+      }
+
+      .btn:nth-child(3)::after {
+        content: "top side demo";
+        bottom: 140%;
+        display: none;
+      }
+      .btn:nth-child(3)::before {
+        border-color: rgba(0, 0, 0, 0.751) transparent transparent transparent;
+        top: -40%;
+        left: 50%;
+        display: none;
+      }
+
+      .btn:nth-child(3):hover::after,
+      .btn:nth-child(3):hover::before {
+        display: block;
+        display: grid;
+        place-items: center;
+      }
+
+      .btn:nth-child(4)::after {
+        content: "left side demo";
+        left: 110%;
+        top: 0;
+        display: none;
+      }
+
+      .btn:nth-child(4)::before {
+        border-color: transparent rgba(0, 0, 0, 0.751) transparent transparent;
+        top: 25%;
+        right: -10%;
+        display: none;
+      }
+
+      .btn:nth-child(4):hover::after,
+      .btn:nth-child(4):hover::before {
+        display: block;
+        display: grid;
+        place-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">Left demo</button>
+      <button class="btn">Bottom demo</button>
+      <button class="btn">Top demo</button>
+      <button class="btn">Right demo</button>
+    </div>
+  </body>
+</html>

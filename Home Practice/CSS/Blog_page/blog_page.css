@@ -1,0 +1,151 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.main {
+    width: 90vw;
+    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+    padding: 2rem;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.blog {
+    box-shadow: 0px 0px 10px rgb(6, 6, 6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    background-color: white;
+    transition: all;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+    animation: cards 2s linear;
+
+}
+
+@keyframes cards {
+    0%{
+        transform: rotate3d(0, 1, 0.5, 3.142rad);
+    }
+    100%{
+        transform: rotate3d(1, 1, 1, 45deg);     
+    }
+}
+
+
+
+/* .blog:hover {
+    transform: rotate3d(1, 1, 1, -55deg);     
+} */
+
+.blog>img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    transition: all;
+    transition-duration: .6s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+h2 {
+    font-size: large;
+}
+
+.profile img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+}
+
+
+.info_box,
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+.profile>img {
+    max-height: 4rem;
+}
+
+.header {
+    text-align: center;
+}
+
+h1,
+h2 {
+    padding: 0.7rem;
+}
+
+.header>p,
+.blog>p {
+    padding: 0.5rem;
+}
+
+button {
+    height: 30px;
+    width: 130px;
+    margin: 21px;
+    border-radius: 30px;
+    background-color: rgb(185, 177, 225);
+}
+
+
+
+.header h1,
+.header p {
+    color: white;
+    text-shadow: 2px 5px 8px black;
+}
+
+.header p {
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 0.5;
+    font-family: cursive;
+}
+
+p+p {
+    font-size: 12px;
+}
+
+

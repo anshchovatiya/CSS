@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Request</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100dvh;
+            width: 100dvw;
+            background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            background-color: white;
+            height: 70%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            border: solid 3px black;
+            overflow: auto;
+            border-radius: 15px;
+            background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+            box-shadow: 0px 0px  30px black;
+        }
+
+        .box {
+            width: 90%;
+            height: fit-content;
+        }
+        fieldset{
+            border-radius: 15px;
+            margin-top: 1.8rem;
+            background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+box-shadow: 0px 0px  30px black;
+
+        }
+        
+        .buttons input{
+            height: 28px;
+            margin: 30px;
+            width: 140px;
+            border-radius: 10px;
+            background: linear-gradient(#e66465, #9198e5);
+            box-shadow: 0px 0px  30px black;
+        }
+        input{
+            padding: 5px;
+            margin: 5px;
+        }
+
+        legend{
+            color: black;
+            text-align: center;
+            font-family: cursive;
+            font-weight:bolder;
+        }
+
+        h1{
+            font-family: cursive;
+            margin-top: 2rem;
+            text-shadow:3px 3px 5px black;
+        }
+        label,#Smoking{
+            padding: 13px;
+        }
+
+        .warning{
+            color: red;
+        }
+        #date{
+            width:95%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="form">
+            <h1>Reservation Request</h1>
+            <div class="general_information box">
+                <form>
+                    <fieldset>
+                        <legend>General_information</legend>
+                        <table>
+                            <tr>
+                                <td><label for="date">Arrival date:</label></td>
+                                <td><input type="date" id="date" name="date"></td>
+                                <td  class="warning"><span>Arrival Date is invalid</span></td>
+                            </tr>
+                            <tr>
+                                <td><label for="duration">Nights:</label></td>
+                                <td><input type="number" id="duration" name="nights"></td>
+                                <td  class="warning"><span>Nights must be a number</span></td>
+                            </tr>
+                            <tr>
+                                <td><label for="age">Adults:</label></td>
+                                <td><input type="number" name="age" id="age"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Children">Children:</label></td>
+                                <td><input type="number" name="Children" id="Children"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <table>
+                            <tr>
+                                <td> <label for="room_type">Room type:</label></td>
+                                <td> <input type="radio" id="standard" name="standard">
+                                    <label for="standard">Standard</label>
+                                    <input type="radio" id="Business" name="standard">
+                                    <label for="Business">Business</label>
+                                    <input type="radio" id="Suite" name="standard">
+                                    <label for="Suite">Suite</label>
+                                </td>
+                            </tr>
+                          <tr>
+                            <td><label for="Bed_type">Bed type:</label></td>
+                            <td>
+                                <input type="radio" id="King" name="Bed_type">
+                                <label for="King">King</label>
+                                <input type="radio" id="Double Double" name="Bed_type">
+                                <label for="Double Double">Double Double</label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <input type="checkbox" id="Smoking" name="Smoking">
+                                <label for="Smoking">Smoking</label>
+                            </td>
+                          </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <table>
+                            <tr>
+                                <td><label for="name">Name:</label></td>
+                                <td><input type="text" id="name" name="name"></td>
+                                <td class="warning">Name is required</td>
+                            </tr>
+                            <tr>
+                                <td><label for="Email">Email:</label></td>
+                                <td><input type="email" id="Email" name="Email"></td>
+                                <td class="warning">Email address is invalid</td>
+                            </tr>
+                            <tr>
+                                <td><label for="Phone">Phone:</label></td>
+                                <td><input type="tel" id="Phone" name="Phone"></td>
+                                <td class="warning">Phone numberis invalid</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <div class="buttons">
+                    <input type="submit" id="submit" name="submit">
+                    <input type="reset" id="delete" name="delete"value="Clear">
+                </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

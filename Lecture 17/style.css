@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.main_container{
+    height: 170svh;
+    width: 100%;
+    background-color:royalblue;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: center;
+}
+.main_container>div{
+    display: flex;
+    border: 2px solid white;
+    width: 100%;
+    padding: 4rem;
+    gap: 1rem;
+    flex:1;
+}
+
+.box{
+    background-color: crimson;
+    flex: 1;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+}
+
+.relative .box2{
+    background-color: green;
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+
+}
+.static .box2{
+    background-color: green;
+    position: static;
+
+}
+
+.absolute{
+    position: relative;
+}
+
+.absolute .box2{
+    background-color: green;
+    position: absolute;
+  top:7rem;
+    left:7rem;
+  width: 400px;
+  aspect-ratio: 2;
+}
+
+h2{
+    color:white;
+    font-size: 2rem;
+}

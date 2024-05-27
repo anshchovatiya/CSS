@@ -1,0 +1,23 @@
+p{
+    font-style: italic  ;
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#para1{
+  color: blue ;  
+}
+
+#para2{
+  background-color: cadetblue;  
+}
+
+#para3{
+    background-color:rgb(73, 35, 35);
+}
+
+#para4{
+    color: hsl(265, 60%, 49%);
+}

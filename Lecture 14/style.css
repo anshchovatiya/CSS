@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.main_container{
+    background-image: linear-gradient(to bottom left,red,blue);
+    padding: 2rem;
+    /* border: 10px solid black; */
+}
+
+
+.box1{
+    background-color: royalblue;
+    padding: 1rem;
+}
+
+.parent{
+    border: 2px solid black;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+}
+
+.parent div{
+    height: 200px;
+    width: 200px;
+}
+
+.box1:hover{
+    translate: 85vw;
+}
+
+.box2{
+    background-color: rgb(170, 110, 122);
+    padding: 1rem;
+    position: relative;
+    left: 90%;
+}
+
+.box2:hover{
+    transform: translateX(-55vw);
+}
+.box3{
+    background-color: rosybrown;
+    padding: 1rem;
+}
+
+.box3:hover{
+    transform: translatey(500px);
+}
+
+.vertical{
+    height: 800px;
+    display: flex;
+    gap: 1rem;
+}
+
+.box4{
+    position: relative;
+    background-color: yellowgreen;
+    top: 520px;
+}
+
+.box4:hover{
+    transform: translatey(-500px);
+}
+
+
+.box5{
+    background-color: red;
+    position: relative;
+    left: 50%;
+    top:50%;
+    translate: -50% -50%;
+}
+
+.box5:hover{
+    transform: scaleX(2);
+}
+
+
+.box6{
+    background-color: beige;
+}
+
+.box6:hover{
+    transform: scaleY(2);
+}
+
+
+.box7{
+    background-color: royalblue;
+    position: relative;
+    left: 50%;
+    top:50%;
+    translate: -50% -50%;
+}
+
+.box7:hover{
+
+    transform: skewX(35deg);
+}
+
+.box8{
+    background-color: cadetblue;
+    position: relative;
+    left: 50%;
+    top:50%;
+    translate: -50% -50%;
+}
+
+
+.box8:hover{
+
+    transform: skewY(35deg);
+}
+.box9{
+    background-color: cadetblue;
+    position: relative;
+    left: 50%;
+    top:50%;
+    translate: -50% -50%;
+}
+
+
+.box9:hover{
+    perspective: 2200px;
+    transition: 3s;
+    transform: skew(180deg, 180deg);
+}
+.box10{
+    background-color: rgb(191, 12, 119);
+    position: relative;
+    left: 50%;
+    top:50%;
+    translate: -50% -50%;
+}
+
+
+.box10:hover{
+    /* transform: rotate(45deg); */
+    /* transform: rotateX(45deg);
+    transform: rotateY(80deg); */
+    perspective: 2200px;
+    transition: 3s;
+    transform: rotateX(180deg) rotateY(360deg) rotateZ(180deg);
+}
+
+.box11{
+    background-color: rgb(191, 12, 119);
+    position: relative;
+    left: 50%;
+    top:50%;
+    translate: -50% -50%;
+    transition: transform 3s linear;
+}
+
+
+.box11:hover{
+    /* transform: rotate(45deg); */
+    /* transform: rotateX(45deg);
+    transform: rotateY(80deg); */
+    perspective: 2200px;
+    transform: rotateX(180deg) rotateY(360deg) rotateZ(180deg) translate(300px,300px) skew(20deg);
+}
+

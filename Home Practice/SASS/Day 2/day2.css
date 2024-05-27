@@ -1,0 +1,43 @@
+.box {
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: row;
+  padding: 20px;
+  background-color: yellow;
+  color: red;
+}
+.box address p:nth-child(1) {
+  font-size: 10px;
+}
+.box address p:nth-child(2) {
+  font-size: 30px;
+}
+.box a {
+  font-size: 50px;
+  color: black;
+}
+.box a:hover {
+  color: red;
+}
+
+.button, .box2 {
+  background-color: green;
+  color: red;
+  font-size: 30px;
+}
+
+.box2 {
+  padding: 2rem;
+}
+.box2:hover {
+  background-color: royalblue;
+}
+
+.box3 a {
+  color: red;
+}
+.box3 a:hover {
+  color: royalblue;
+}/*# sourceMappingURL=day2.css.map */

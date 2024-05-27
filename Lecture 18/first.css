@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: royalblue;
+    height: 100svh;
+    display: grid;
+    place-items: center;
+}
+.navbar {
+    
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    background-color:rgb(245, 242, 242);
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navbar > div {
+    width: 4rem;
+    height: 4rem;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+}
+
+.box1,.box9 {
+    background-color: orangered;
+    font-size: 1.8vw;
+    font-weight: 700;
+color: white;
+}
+
+i:first-child{
+    margin-right: -20px;
+}
+i{
+    color: white;
+
+}
+
+.box1:hover,.box9:hover{
+    background-color: rgb(167, 206, 26);
+
+}
+
+.navbar>div:not(:first-child,:last-child){
+    background-color: white;
+    font-weight: 700;
+}
+
+.navbar>div:not(:first-child,:last-child):hover{
+    background-color: royalblue;
+    a{
+        color: white;
+    }
+    transition: 0.6s;
+}

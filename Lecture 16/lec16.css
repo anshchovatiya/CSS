@@ -1,0 +1,41 @@
+* {
+    padding: 10px;
+}
+
+/* this will remain in it's place not changing it's position */
+.image1 {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 900px;
+    left: 200px;
+}
+
+/* this will fixed on this position through the entire page */
+.image2 {
+    height: 300px;
+    width: 300px;
+    position: fixed;
+    top: 200px;
+    right: 120px;
+}
+
+/* this will be stick to it's place page is it's parent container */
+.image3 {
+    height: 300px;
+    width: 300px;
+    position: sticky;
+    top: 600px;
+    left: 1000px;
+}
+
+
+.container {
+    height: 4000px;
+    background-color: yellowgreen;
+}
+
+.container2 {
+    height: 4000px;
+    background-color: red;
+}

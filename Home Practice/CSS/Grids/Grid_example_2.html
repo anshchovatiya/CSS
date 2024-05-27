@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird 2</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(36, 30, 30);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .item {
+            border: solid 2px black;
+            margin: 1.6rem;
+        }
+
+
+        .rowspan_2 {
+            grid-row: span 2;
+        }
+
+        .columnspan_2 {
+            grid-column: span 2;
+        }
+
+        .container :nth-child(1),
+        .container :nth-child(2) {
+            background-color: aquamarine;
+        }
+
+        .container :nth-child(3),
+        .container :nth-child(4) {
+            background-color: rgb(230, 179, 85);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item columnspan_2">Item1</div>
+        <div class="item rowspan_2">Item2</div>
+        <div class="item item3">Item3</div>
+        <div class="item item4">Item4</div>
+    </div>
+</body>
+
+</html>

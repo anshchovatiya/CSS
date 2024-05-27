@@ -1,0 +1,28 @@
+a:link {
+    color:yellow;
+  }
+  
+  a:visited {
+    color: green;
+  }
+
+  a:hover{
+    color:pink;
+    text-decoration: none;
+  }
+  
+  .special {
+    color: red;
+  }
+  
+  p {
+    color: blue;
+  }
+
+  /* conditinal logic */
+  @media (min-width:30em) {
+    body{
+        background-color: pink;
+    }
+  }
+  

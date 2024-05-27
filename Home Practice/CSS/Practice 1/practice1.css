@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* logical section */
+
+.ul_list {
+    list-style-type: none;
+    padding: 1em;
+}
+
+
+.headcontainer {
+    height: 8vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #00C0FF, #4218B8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: cursive;
+    padding: 0.4em;
+    text-shadow: 4px 4px 3px rgb(39, 51, 42);
+    color: rgb(219, 202, 202);
+    font-size: 7.2vh;
+    padding-bottom:
+        30px;
+}
+
+a {
+    padding: 0.2em;
+    font-size: 3vh;
+    text-decoration: none;
+    color: black;
+}
+
+.containerfooter {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #00C0FF, #674eab);
+    ;
+    text-align: center;
+    min-height: 40px;
+    font-size: 2rem;
+}
+
+
+.container_main {
+    width: 70%;
+    margin: auto;
+    box-shadow: 0px 0px 30px black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1.3rem;
+    background-image: linear-gradient(to bottom right, #38A2D7, #561139);
+
+}
+
+
+.item {
+    display: flex;
+    border: solid 1px black;
+    margin: 1rem;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #305170, #6DFC6B);
+    box-shadow: 0px 0px 30px black;
+
+}
+
+
+
+img {
+    width: 300px;
+    height: 300px;
+    padding: 2rem;
+    padding-top: 5rem;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+
+    border-radius: 90px;
+
+}
+
+
+
+body {
+    background-image: linear-gradient(to bottom right, #FFDB01, #0E197D);
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dishname {
+    font-family: cursive;
+}
+
+img:hover {
+    transform: scale(1.2);
+
+}
+
+
+.buy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(90, 88, 88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    border-radius: 90px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 4</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(46, 42, 42);
+            display: grid;
+            gap: 0.3em;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+        }
+
+        .item {
+            border: solid 2px black;
+            border-radius: 10px;
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .colspan_3 {
+            grid-column: span 3;
+            grid-row: span 3;
+            background-color: rgb(136, 122, 122);
+        }
+
+        .colspan_2 {
+            grid-column: span 2;
+            background-color: rgb(95, 95, 134);
+        }
+
+        .colspan_4 {
+            grid-column: span 4;
+            background-color: rgb(145, 93, 93);
+        }
+
+        .colspan_6 {
+            grid-column: span 6;
+            background-color: rgb(180, 161, 125);
+        }
+
+        .rowspan_4 {
+            grid-row: span 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1 item colspan_3">Item1</div>
+        <div class="item2 item colspan_3">Item2</div>
+        <div class="item3 item colspan_2 rowspan_4">Item3</div>
+        <div class="item4 item colspan_4 rowspan_4">Item4</div>
+        <div class="item5 item colspan_6">Item5</div>
+    </div>
+</body>
+
+</html>

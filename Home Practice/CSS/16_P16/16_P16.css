@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.box {
+
+    margin: 10px;
+    border: solid 5px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading,
+.footer {
+    background-color: rgb(231, 56, 56);
+    height: 60px;
+    padding: 12px;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.Images {
+    order: 500;
+    max-width: 100%;
+    min-width: 10%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    padding: 10px;
+    color: white;
+    background-color: red;
+    width: 100%;
+}
+
+.footer {
+    padding: 12px;
+}

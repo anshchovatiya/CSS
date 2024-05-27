@@ -1,0 +1,13 @@
+.container {
+    height: 300px;
+    width: 300px;
+    border: solid 3px black;
+    background-color: wheat;
+    transition: all 3s 0s ease-in;
+}
+
+.container:hover {
+    height: 600px;
+    width: 600px;
+    background-color: aqua;
+}
