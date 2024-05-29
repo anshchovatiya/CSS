@@ -25,7 +25,7 @@
   <body>
     <!-- main container started here -->
 
-    <div class="main_container dark:bg-slate-900 max-[200px]:overflow-hidden">
+    <div class="main_container dark:bg-slate-900 max-[200px]:overflow-hidden scroll-smooth">
       <!-- header section start here -->
       <header class="backdrop-blur-[6px] sticky top-0 z-50">
         <div
@@ -74,7 +74,7 @@
         >
           <!-- left side of hero section -->
           <div class="left-side flex-1 text-center flex flex-col items-center">
-            <p class="text-base py-2 text-red-600">Our Summer Collections</p>
+            <p class="text-base py-2 text-red-600 font-bold">Our Summer Collections</p>
             <h1
               class="text-[2.5rem] py-4 font-bold tracking-wider dark:text-white sm:text-[3rem] md:text-[3.5rem] lg:text-[5rem]"
             >
@@ -111,7 +111,7 @@
           <!-- left side of hero section ended -->
 
           <!-- right side of hero section start here -->
-          <div class="right-side w-2/4 max-[720px]:w-full">
+          <div class="right-side w-2/4 max-[720px]:w-full animate-bounce mt-16">
             <img
               class="shadow_custom w-full"
               src="./assets/images/big-shoe1.png"
@@ -239,8 +239,8 @@
             </p>
             <button class="button mt-6">View details</button>
           </div>
-          <div class="right_side w-4/5 m-auto lg:w-full">
-            <img class="w-full" src="./assets/images/shoe8.svg" alt="shoes" />
+          <div class="right_side w-4/5 m-auto lg:w-full ">
+            <img class="w-full animate-spin" src="./assets/images/shoe8.svg" alt="shoes" />
           </div>
         </div>
         <!-- super quality section ended here -->
@@ -249,7 +249,7 @@
         <div
           class="max-container py-4 px-8 features grid grid-cols-1 md:grid-cols-3 gap-12 p-12 mt-12"
         >
-          <section class="flex items-center flex-col p-5 shadow-3xl">
+          <section class="flex items-center flex-col p-5 shadow-3xl dark:bg-white rounded-2xl dark:text-black">
             <div
               class="bg-[#FF6452] h-16 w-16 grid place-items-center rounded-full my-4"
             >
@@ -260,11 +260,11 @@
               />
             </div>
             <p class="font-semibold text-2xl my-3 text-center">Free Shipping</p>
-            <p class="text-center Description my-4 text-lg">
+            <p class="text-center Description my-4 text-lg dark:text-black">
               Enjoy seamless shopping with our complimentary shipping service
             </p>
           </section>
-          <section class="flex items-center flex-col p-5 shadow-3xl">
+          <section class="flex items-center flex-col p-5 shadow-3xl dark:bg-white rounded-2xl dark:text-black">
             <div
               class="bg-[#FF6452] h-16 w-16 grid place-items-center rounded-full my-4"
             >
@@ -277,11 +277,11 @@
             <p class="font-semibold text-2xl my-3 text-center">
               Secure Payment
             </p>
-            <p class="text-center Description my-4 text-lg">
+            <p class="text-center Description my-4 text-lg dark:text-black">
               Experience worry-free transactions with our secure payment options
             </p>
           </section>
-          <section class="flex items-center flex-col p-5 shadow-3xl">
+          <section class="flex items-center flex-col p-5 shadow-3xl dark:bg-white rounded-2xl dark:text-black">
             <div
               class="bg-[#FF6452] h-16 w-16 grid place-items-center rounded-full my-4"
             >
@@ -294,7 +294,7 @@
             <p class="font-semibold text-2xl my-3 text-center">
               Love to help you
             </p>
-            <p class="text-center Description my-4 text-lg">
+            <p class="text-center Description my-4 text-lg dark:text-black">
               Our dedicated team is here to assist you every stop of the way.
             </p>
           </section>
@@ -343,11 +343,11 @@
         <div class="review_section my-16 py-12 px-8 text-center bg-blue-100">
           <section class="max-container">
             <p
-              class="text-[2.7rem] font-bold md:text-[3rem] lg:text-[3.5rem] dark:text-white py-6"
+              class="text-[2.7rem] font-bold md:text-[3rem] lg:text-[3.5rem] py-6"
             >
               What Our Customers Say?
             </p>
-            <p class="Description mb-7 max-w-[500px] m-auto">
+            <p class="Description mb-7 max-w-[500px] m-auto dark:text-black">
               Hear genuine stories from our customers about their exceptional
               experience with us
             </p>
@@ -361,7 +361,7 @@
                 src="./assets/images/customer1.jpeg"
                 alt="moric brown profile photo"
               />
-              <p class="Description max-w-[300px] text-xl">
+              <p class="Description max-w-[300px] text-xl dark:text-black">
                 The attention to detail and quality of product exceed my
                 expectation, Highly recommended!
               </p>
@@ -377,7 +377,7 @@
                 src="./assets/images/customer2.svg"
                 alt="Lota Mongeskar profile photo"
               />
-              <p class="Description max-w-[300px] text-xl">
+              <p class="Description max-w-[300px] text-xl dark:text-black">
                 The product not only met but exceed my expectations. I'll
                 definitely be a returning customer!
               </p>
@@ -404,7 +404,7 @@
             class="flex gap-3 border-2 border-gray-500 border-solid rounded-xl w-full px-3 py-3 flex-1 gap-6 lg:max-w-[42%] max-[374px]:flex-col"
           >
             <input
-              class="flex-1 text-base md:text-xl pl-4"
+              class="flex-1 text-base md:text-xl pl-4 rounded-xl"
               type="email"
               name="email"
               id="email"

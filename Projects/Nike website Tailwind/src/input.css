@@ -58,7 +58,7 @@
 
   /* this is snippet for buttons */
   .button{
-    @apply medium-responsive-font z-20 font-semibold relative dark:text-white px-5 pt-1 pb-2  rounded-md bg-slate-900 text-white dark:bg-white dark:text-black overflow-hidden;
+    @apply medium-responsive-font z-20 font-semibold relative dark:text-white px-5 pt-1 pb-2  rounded-md bg-slate-900 text-white dark:bg-white dark:text-black overflow-hidden transition-scale scale-110;
     
     &::before{
       content: "";
