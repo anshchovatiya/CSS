@@ -288,7 +288,7 @@ $normal-font-size: clamp(0.8rem, 1.4vw, 2.5rem);
   .hero_section {
     overflow: hidden;
     animation: fadeInRight 3s ease-in-out;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); 
     height: calc(100vh - 100px);
     @include flexbox(column, center, center);
     margin: 0 auto;
